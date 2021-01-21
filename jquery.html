@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$(this).on('keydown touchend', function (e) {
+				e = e || window.event;
+				var key = e.keyCode;
+				if (key == 37) {
+					alert('left arrow');
+				} else if (key == 38) {
+					alert('up arrow');
+				} else if (key == 39) {
+					alert('right arrow');
+				} else if (key == 40) {
+					alert('down arrow');
+				}
+		});
+	});
+	</script>
+</body>
